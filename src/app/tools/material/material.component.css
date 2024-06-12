@@ -1,0 +1,23 @@
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  right: -600px;
+  top: 100px;
+
+}
+
+h1 {
+  color: rgb(209, 6, 6);
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  color: gray;
+  text-align: center;
+}

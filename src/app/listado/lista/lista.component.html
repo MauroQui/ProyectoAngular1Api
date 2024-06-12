@@ -1,0 +1,10 @@
+<mat-list role="list">
+    @for (personaje of data.results; track $index) {
+      <mat-list-item [routerLink] = "['/personaje', personaje.id]">
+        <mat-icon matListItemIcon><img [src] = " personaje.image " width="45" height="45"></mat-icon>
+        <div matListItemTitle> {{ personaje.name }}</div>
+        <div matListItemLine> Status: {{ personaje.status }} -- Especie: {{personaje.species}}</div>
+        <div matListItemLine> Fecha de creacion: {{ personaje.created | date: 'medium'}}</div>
+      </mat-list-item>
+    } 
+    </mat-list>

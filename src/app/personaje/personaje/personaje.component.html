@@ -1,0 +1,15 @@
+<mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{personaje.name}}</mat-card-title>
+      <mat-card-subtitle>{{personaje.status}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="personaje.image" alt="Photo of the character en cuestion">
+    <mat-card-content>
+      <p>Gender: {{personaje.gender}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions>
+  </mat-card>
